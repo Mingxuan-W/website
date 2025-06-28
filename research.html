@@ -27,6 +27,8 @@
 
 </head>
 
+
+
 <body id="page-top">
 
   <!-- Navigation -->
@@ -59,69 +61,81 @@
       <div class="row mb-6">
         <div class="col-md-12 col-lg-12">
 
-          <!-- pod -->
         <div class="col-md-10 col-lg-10">
-          <div class="portfolio-item portfolio-item-research mx-auto align-items-center" data-toggle="modal" data-target="#livesketch">
-              
-              <div class="row justify-content-center">
-                    <video style="width: 70%; height: auto;" muted autoplay loop id="yourVideoID">
-                      <source src="img/research/pod/pod_teaser_video.mp4" type="video/mp4">
-                    </video>
-                </div>
-              <div class="portfolio-label">Predict-Optimize-Distill: A Self-Improving Cycle for 4D Object Understanding</div>
-              <div class="portfolio-authors">  <b>Mingxuan Wu*</b> , Huang Huang*, Justin Kerr, Chung Min Kim, Anthony Zhang, Brent Yi, Angjoo Kanazawa</div>
-              <div class="portfolio-subtitle">ICCV 2025
-                  <div class="portfolio-skill">
-                      <a style="padding-right: 1rem;" href="https://predict-optimize-distill.github.io/pod.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
-                      <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2504.17441" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
-                      <a href="https://predict-optimize-distill.github.io/pod.github.io/" target="_blank"> > <highlight-secondary>Code(Coming Soon)</highlight-secondary></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-          <!-- rsrd -->
-          <div class="col-md-10 col-lg-10">
-            <div class="portfolio-item portfolio-item-research mx-auto align-items-center" data-toggle="modal" data-target="#livesketch">
-                <div class="row justify-content-center">
-                    <video style="width: 70%; height: auto;" muted autoplay loop id="yourVideoID">
-                      <source src="img/research/rsrd/rsrd_teaser.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="portfolio-label">Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction</div>
-                <div class="portfolio-authors"> Justin Kerr*, Chung Min Kim*, <b>Mingxuan Wu</b>, Brent Yi, Qianqian Wang, Ken Goldberg, Angjoo Kanazawa</div>
-                <div class="portfolio-subtitle">CoRL 2024 (Oral)
-
-                    <div class="portfolio-skill">
-                        <a style="padding-right: 1rem;" href="https://robot-see-robot-do.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
-                        <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2409.18121" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
-                        <a href="https://github.com/kerrj/rsrd" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a>
-                    </div>
+        <div 
+          class="portfolio-item portfolio-item-research mx-auto align-items-center" 
+          data-toggle="modal" 
+          data-target="#livesketch"
+          onmouseover="this.querySelector('video').play()"
+          onmouseout="this.querySelector('video').pause(); this.querySelector('video').currentTime = 0;"
+        >
+            <div class="row justify-content-center">
+                <video style="width: 70%; height: auto;" muted loop id="video_pod" preload="metadata">
+                  <source src="img/research/pod/pod_teaser_video.mp4" type="video/mp4" >
+                </video>
+            </div>
+            <div class="portfolio-label">Predict-Optimize-Distill: A Self-Improving Cycle for 4D Object Understanding</div>
+            <div class="portfolio-authors">  <b>Mingxuan Wu*</b> , Huang Huang*, Justin Kerr, Chung Min Kim, Anthony Zhang, Brent Yi, Angjoo Kanazawa</div>
+            <div class="portfolio-subtitle">ICCV 2025
+                <div class="portfolio-skill">
+                    <a style="padding-right: 1rem;" href="https://predict-optimize-distill.github.io/pod.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+                    <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2504.17441" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
+                    <a href="https://predict-optimize-distill.github.io/pod.github.io/" target="_blank"> > <highlight-secondary>Code(Coming Soon)</highlight-secondary></a>
                 </div>
             </div>
-          </div>
+        </div>
+      </div>
 
-          <!-- garfield  -->
-          <div class="col-md-10 col-lg-10">
-              <div class="portfolio-item portfolio-item-research mx-auto align-items-center" data-toggle="modal" data-target="#livesketch">
+      <div class="col-md-10 col-lg-10">
+        <div 
+          class="portfolio-item portfolio-item-research mx-auto align-items-center" 
+          data-toggle="modal" 
+          data-target="#livesketch"
+          onmouseover="this.querySelector('video').play()"
+          onmouseout="this.querySelector('video').pause(); this.querySelector('video').currentTime = 0;"
+        >
             <div class="row justify-content-center">
-                <video style="width: 100%; height: auto;" muted autoplay loop id="garfield">
-                  <source src="img/research/garfield/concat.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
+                <video style="width: 70%; height: auto;" muted loop id="video_rsrd" preload="metadata">
+                  <source src="img/research/rsrd/rsrd_teaser.mp4" type="video/mp4">
                 </video>
-              </div>
+            </div>
+            <div class="portfolio-label">Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction</div>
+            <div class="portfolio-authors"> Justin Kerr*, Chung Min Kim*, <b>Mingxuan Wu</b>, Brent Yi, Qianqian Wang, Ken Goldberg, Angjoo Kanazawa</div>
+            <div class="portfolio-subtitle">CoRL 2024 (Oral)
+                <div class="portfolio-skill">
+                    <a style="padding-right: 1rem;" href="https://robot-see-robot-do.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+                    <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2409.18121" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
+                    <a href="https://github.com/kerrj/rsrd" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a>
+                </div>
+            </div>
+        </div>
+      </div>
 
-              <div class="portfolio-label">GARField: Group Anything with Radiance Fields</div>
-              <div class="portfolio-authors"> Chung Min Kim*, <b>Mingxuan Wu*</b>, Justin Kerr*</b>, Ken Goldberg, Matthew Tancik, Angjoo Kanazawa</div>
-              <div class="portfolio-subtitle">CVPR 2024
-
+      <div class="col-md-10 col-lg-10">
+        <div 
+            class="portfolio-item portfolio-item-research mx-auto align-items-center" 
+            data-toggle="modal" 
+            data-target="#livesketch"
+            onmouseover="this.querySelector('video').play()"
+            onmouseout="this.querySelector('video').pause(); this.querySelector('video').currentTime = 0;"
+          >
+          <div class="row justify-content-center">
+              <video style="width: 100%; height: auto;" muted loop id="garfield">
+                <source src="img/research/garfield/concat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="portfolio-label">GARField: Group Anything with Radiance Fields</div>
+            <div class="portfolio-authors"> Chung Min Kim*, <b>Mingxuan Wu*</b>, Justin Kerr*</b>, Ken Goldberg, Matthew Tancik, Angjoo Kanazawa</div>
+            <div class="portfolio-subtitle">CVPR 2024
               <div class="portfolio-skill">
                   <a style="padding-right: 1rem;" href="https://www.garfield.studio/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
                   <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2401.09419" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
                   <a href="https://github.com/chungmin99/garfield" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
                 </div>
-          </div>
+            </div>
+        </div>
+      </div>
 
           
 
