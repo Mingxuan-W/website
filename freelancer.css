@@ -85,7 +85,7 @@ html {
   --gray-dark: #343a40;
   --black: #000000;
   --primary: #ffffff;
-  --secondary: #000000;
+  --secondary: #BF5700;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -10083,6 +10083,16 @@ fulllight {
 .personal-name{
   margin-top: -195px;
 } */
+
+/* Force navbar to UT Burnt Orange */
+/* #mainNav {
+    background-color: #BF5700 !important;
+}
+
+#mainNav.navbar-shrink {
+    background-color: #BF5700 !important;
+} */
+
 
 
 body { padding: 0; margin: 0 }
